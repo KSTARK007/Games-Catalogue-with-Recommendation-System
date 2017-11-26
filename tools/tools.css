@@ -1,0 +1,120 @@
+body
+{ z-index: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-image: url("1-min.jpg");
+  position: absolute;
+  background-size: auto;
+  margin: 0px;
+  text-align: center;
+}
+.absolute{
+  position: fixed;
+  display: block;
+  margin-top: 0px;
+  z-index: 10000;
+  display: block;
+  background-color: rgba(245, 50, 64 , 1);
+  list-style-type:none;
+  padding: 0px;
+  height: 47px;
+  width: 100%;
+}
+ul {
+    z-index: 1000;
+    list-style-type:none;
+    margin:0px;
+    padding: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(245, 50, 64 , 1);
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    border-radius: 30px;
+    width:80px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #F9BE02;
+}
+.radius{
+    border-radius: 30px;
+}
+.active
+{
+  background-color: #F9BE02;
+}
+.float_right
+{
+  float: right;
+}
+h3
+{
+  font-size: 40px;
+}
+.text
+{ z-index: 10;
+  position: relative;
+  font-size: 40px;
+  color: black;
+  padding-top: 15%;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+}
+
+input[type=button]
+{
+  margin-top: 2%;
+  position: relative;
+  border: none;
+  padding: 20px;
+  border-radius: 40px;
+  width: 200px;
+  background-color: #F9BE02;
+  shadow:10px;
+  text-align: center;
+}
+input[type=button]:hover
+{
+  background-color: rgba(245, 50, 64, 1);
+  position: relative;
+  width: 40%;
+  text-align: center;
+  z-index: 1000;
+}
+.contact
+{
+  height: 100px;
+  display: block;
+  position: relative;
+  margin-top: 11%;
+  padding-top: 20px;
+  padding-bottom: 180px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  opacity: 1;
+  text-align: center;
+}
+.email
+{
+  color: blue;
+  font-size: 30px;
+}
+.copyright
+{
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0px;
+}
