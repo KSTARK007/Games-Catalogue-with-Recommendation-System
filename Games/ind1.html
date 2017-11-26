@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+.thumbs
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+.k
+{
+width:500px;
+height:300px;
+margin-left:30%;
+background-color: #2c3e50;
+float:center;
+padding:10px;
+}
+input[type=text]{
+    background-color: purple;
+    border: none;
+    color: red;
+    padding: 5px 5px;
+    border-radius: 5px;
+    width:100%;
+
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-top:120px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+.input{width: 100%}
+input[type="text"]::-webkit-input-placeholder {
+color: blue !important;
+}
+
+input[type="text"]:-moz-placeholder { /* Firefox 18- */
+color: blue !important;
+}
+
+input[type="text"]::-moz-placeholder {  /* Firefox 19+ */
+color: blue !important;
+}
+
+input[type="text"]:-ms-input-placeholder {
+color: blue !important;
+}
+
+
+</style>
+</head>
+<body style="background-color:black;padding:30px;padding-top:5px;">
+  <h3 style="background-color:#34495e">KSTARK.INC</h3>
+  <div class="k" style="margin-bottom:5%;">
+  	<div>
+  		<h1>HELLO THERE!</h1>
+  		<input class="input" type="text" placeholder="                                   USERNAME" /><br>
+  		<input class="input" type="email" placeholder="EMAIL" required/> <br>
+  		<input class="input" type="password" placeholder="PASSWORD" />
+  		<br>
+
+  		<br>
+
+  	</div>
+</div>
+<form>
+  <div class="thumbs" style="background-color:#2c3e50;">
+  <div style="margin-left:3%;">
+    <img class ="resp" src = "fifa.png" width="300" height="250" onmouseover="obj.fun(event)"  onmouseout="obj.fun1(event)" alt = "Image Over Here" id = "img1" title = "Click to Select" />
+  <span style="display:inline-block;">FIFA 18</span><input type="radio" name="select" />
+  </div>
+  <div>
+    <img class ="resp" src = "FARCRY.png" width="300" height="250" onmouseover="obj.fun(event)"  onmouseout="obj.fun1(event)" alt = "Image Over Here" id = "img2" title = "Click to Select"/>
+    <span style="display:inline-block;">FarCry 5</span><input type="radio" name="select" />
+  </div>
+  <div>
+    <img class ="resp" src = "INJUSTICEBack.png" width="300" height="250"  onmouseover="obj.fun(event)"  onmouseout="obj.fun1(event)" alt = "Image Over Here" id = "img3" title = "Click to Select" />
+    <span style="display:inline-block;">Injustice 2</span><input type="radio" name="select" />
+  </div>
+  <div>
+    <img class ="resp" src = "ASSBack.png" width="300" height="250"  onmouseover="obj.fun(event)"  onmouseout="obj.fun1(event)" alt = "Image Over Here" id = "img4" title = "Click to Select"/>
+    <span style="display:inline-block;">Assassin's Creed Origins</span><input type="radio" name="select" />
+  </div>
+</div>
+
+<div class="thumbs" style="margin-top:5%;background-color:#2c3e50;">
+  <div>
+    <img class ="resp" src = "DARKSIDERSBack.png" width="290" height="250" onmouseover="obj.fun(event)"  onmouseout="obj.fun1(event)" alt = "Image Over Here" id = "img5" title = "Click to Select" />
+    <span style="display:inline-block;">Darksiders 3</span><input type="radio" name="select" />
+  </div>
+    <div>
+      <img class ="resp" src = "FORZABack.png" width="290" height="250"  onmouseover="obj.fun(event)" onmouseout="obj.fun1(event)"  alt = "Image Over Here" id = "img6" title = "Click to Select"/>
+      <span style="display:inline-block;">Forza</span><input type="radio" name="select" />
+    </div>
+  <div>
+    <img class ="resp" src = "NFSBack.png" width="290" height="250"  onmouseover="obj.fun(event)" onmouseout="obj.fun1(event)"  alt = "Image Over Here" id = "img6" title = "Click to Select"/>
+    <span style="display:inline-block;">NFS Payback</span><input type="radio" name="select" />
+  </div>
+
+</div>
+<input type="submit" value="Create Account" style="margin-left:40%;"/>
+</form>
+<footer class="w3-container w3-padding-32 w3-grey" style="margin-top:10%;">
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>INFO</h3>
+      </div>
+
+
+      <div class="w3-third">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">NFS</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">FIFA 18</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ronaldo</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">FARCRY 5</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games Free Download</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NBA2k18</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">INJUSTICE 2</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">ORIGINS</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">SYNDICATE</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">FORZA 2017</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DARKSIDES 3</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">FIFA Cracked Version</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NFS Rivals</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NBA 2K17</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+<script>
+var obj = {}
+obj.fun = function(event)
+{
+  event.currentTarget.style.border = "2px solid white";
+  event.currentTarget.style.borderRadius = "5px";
+  event.currentTarget.style.filter = "grayscale(100%)";
+}
+
+obj.fun1 = function(event)
+{
+  event.currentTarget.style.borderRadius = "0px";
+  event.currentTarget.style.filter = "grayscale(0%)";
+  event.currentTarget.style.border = "0px";
+}
+var th = document.getElementsByClassName("resp");
+th.addEventListener("mouseover",obj.fun,false);
+th.addEventListener("mouseout",obj.fun1,false);
+</script>
+
+
+
+</body>
+</html>

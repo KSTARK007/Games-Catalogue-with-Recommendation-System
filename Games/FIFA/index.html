@@ -1,0 +1,51 @@
+<php ?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <title>FIFA 18</title>
+  </head>
+  <body>
+    <img class="bgImg" src="gameplay1.PNG">
+    <div class="absolute" >
+        <ul>
+          <li><a href="../../index.html">HOME</a></li>
+          <li class="active"><a href="../index.php" target="_blank">GAMES</a></li>
+          <li><a href="../../tools/tools.html" target="_blank">TOOLS</a></li>
+          <li class="float_right active"><a href="../../login/index.php">SIGN UP</a></li>
+          <li><a href="../../Aboutus/index.php" target="_blank">ABOUT US</a></li>
+        </ul>
+    </div>
+    <img  class="fifa"  src="fifa.png">
+    <div class="mainDiv" id="mainDiv">
+      <div class="cover" id="cover">
+        <h3>click to play</h3><br>
+        <h3>double click to pause</h3>
+      </div>
+      <video src="FIFA18.mp4" onclick="play()" ondblclick="pause()"  poster="bg.PNG" class="vid">video is not supportedd by your device</video>
+      <div class="rightMainDiv">
+        <div class="text">
+          <span>
+            Powered by FrostBite the new FIFA 18 blurs the line between the virtual and real worlds, bringing to life the players , Teams and the atmospheres of the world of gamming</span><br>
+            <br><span class="big" >Play Today</span>
+            <br><br><span >THIS GAME IS RATED : <span id="rating">5</span>/5</span>
+        </div>
+      </div>
+    </div>
+    <a href="../../tool.zip"><button type="button"  class="button">CLICK HERE TO DOWNLOAD</button></a>
+
+
+
+
+
+    <script type="text/javascript">
+    //alert(document.querySelector("#cover").children[0]);
+    function coverDelete()
+    {
+        document.querySelector("#mainDiv").removeChild(document.querySelector("#mainDiv").children[0]);
+    }
+    document.querySelector("#cover").addEventListener("click",coverDelete);
+    </script>
+  </body>
+</html>

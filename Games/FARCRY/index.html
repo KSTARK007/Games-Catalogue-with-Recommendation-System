@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="game.css">
+    <title>FARCRY 5</title>
+    <style media="screen">
+      .active
+      {
+        background-color: black;
+      }
+      li a:hover
+      {
+          background-color: black;
+      }
+      .textbox
+      {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="bgImg" src="Farcry.png">
+    <div class="absolute" >
+        <ul>
+          <li><a href="../../index.html" style="color:white;">HOME</a></li>
+          <li class="active"><a style="color:white;" href="../index.php" target="_blank">GAMES</a></li>
+          <li><a style="color:white;" href="../../tools/tools.html" target="_blank">TOOLS</a></li>
+          <li class="float_right active"><a style="color:white;" href="../../login/index.php">SIGN UP</a></li>
+          <li><a style="color:white;" href="../../Aboutus/index.php" target="_blank">ABOUT US</a></li>
+        </ul>
+    </div>
+    <img  class="fifa"  src="FARCRYLogo.png">
+    <div class="mainDiv" id="mainDiv">
+      <div class="cover" id="cover">
+        <h3>click to play</h3><br>
+        <h3>double click to pause</h3>
+      </div>
+      <video src="Test.mp4" onclick="play()" ondblclick="pause()"  poster="FARCRYLogo.png" class="vid">video is not supportedd by your device</video>
+      <div class="rightMainDiv">
+        <div class="text">
+          <span class="textbox">
+            Welcome to Hope County, Montana, home to a fanatical doomsday cult known as The Project at Eden’s Gate that is threatening the community's freedom. Stand up to the cult’s leader, Joseph Seed and the Heralds, and spark the fires of resistance that will liberate the besieged community.
+ It’ll be wild and it’ll get weird, but as long as you keep your wits about you, the residents of Hope County can rest assured you’re their beacon of hope.</span><br>
+            <br><span class="big" >Play Today</span>
+            <br><br><span >THIS GAME IS RATED : <span id="rating">3</span>/5</span>
+        </div>
+      </div>
+    </div>
+    <a href="../../tool.zip"><button type="button"  class="button">CLICK HERE TO DOWNLOAD</button></a>
+
+
+
+
+
+    <script type="text/javascript">
+    //alert(document.querySelector("#cover").children[0]);
+    function coverDelete()
+    {
+        document.querySelector("#mainDiv").removeChild(document.querySelector("#mainDiv").children[0]);
+    }
+    document.querySelector("#cover").addEventListener("click",coverDelete);
+    </script>
+  </body>
+</html>

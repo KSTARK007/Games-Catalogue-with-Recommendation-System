@@ -1,0 +1,67 @@
+<php ?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="game.css">
+    <title> DARKSIDER 3</title>
+  <style>
+  li a:hover {
+      background-color:#238368;
+
+}
+.active
+{
+  background-color:#238368;
+}
+.textbox
+{
+  font-size: 30px;
+}
+  </style>
+  </head>
+  <body>
+    <img class="bgImg" src="DARKSIDERSBack.png">
+    <div class="absolute" >
+        <ul>
+          <li ><a href="../../index.html" style="color:white;">HOME</a></li>
+          <li  class="active"><a style="color:white;" href="../index.php" target="_blank">GAMES</a></li>
+          <li ><a style="color:white;" href="../../tools/tools.html" target="_blank">TOOLS</a></li>
+          <li  class="float_right active"><a style="color:white;" href="../../login/index.php">SIGN UP</a></li>
+          <li ><a style="color:white;" href="../../Aboutus/index.php" target="_blank">ABOUT US</a></li>
+        </ul>
+    </div>
+    <img  class="fifa"  src="DARKSIDERSLogo.png">
+    <div class="mainDiv" id="mainDiv">
+      <div class="cover" id="cover">
+        <h3>click to play</h3><br>
+        <h3>double click to pause</h3>
+      </div>
+      <video src="Test.mp4" onclick="play()" ondblclick="pause()"  poster="DARKSIDERSLogo.png" class="vid">video is not supportedd by your device</video>
+      <div class="rightMainDiv">
+        <div class="text">
+          <span class="textbox">
+            Earth is now overrun by the Seven Deadly Sins and the mystical creatures and degenerated beings that serve them.
+            The Charred Council calls upon Fury to battle from the heights of heaven down through the depths of hell in a quest
+            to restore the balance and prove that she is the most powerful of the Horsemen.</span><br>
+            <br><span class="big" >Play Today</span>
+            <br><br><span >THIS GAME IS RATED : <span id="rating">2.5</span>/5</span>
+        </div>
+      </div>
+    </div>
+    <a href="../../tool.zip"><button type="button"  class="button">CLICK HERE TO DOWNLOAD</button></a>
+
+
+
+
+
+    <script type="text/javascript">
+    //alert(document.querySelector("#cover").children[0]);
+    function coverDelete()
+    {
+        document.querySelector("#mainDiv").removeChild(document.querySelector("#mainDiv").children[0]);
+    }
+    document.querySelector("#cover").addEventListener("click",coverDelete);
+    </script>
+  </body>
+</html>
